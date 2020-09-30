@@ -111,9 +111,7 @@
     <Content Include="assets\scripts\slyslider.js" />
     <Content Include="assets\scripts\uone.js" />
     <Content Include="assets\scripts\wow.min.js" />
-    <Content Include="index-light.html" />
-    <Content Include="portfolio-single-dark.html" />
-    <Content Include="portfolio-single-light.html" />
+    <Content Include="index.html" />
     <Content Include="sendEmail.php" />
     <Content Include="Web.config" />
   </ItemGroup>
