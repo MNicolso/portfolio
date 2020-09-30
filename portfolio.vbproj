@@ -157,27 +157,6 @@
     <Content Include="assets\fonts\LineIcons.eot" />
     <Content Include="assets\fonts\LineIcons.ttf" />
     <Content Include="assets\fonts\LineIcons.woff" />
-    <Content Include="assets\sass\style.scss" />
-    <Content Include="assets\sass\_blog-page.scss" />
-    <Content Include="assets\sass\_blog.scss" />
-    <Content Include="assets\sass\_color-scheme.scss" />
-    <Content Include="assets\sass\_contact.scss" />
-    <Content Include="assets\sass\_footer.scss" />
-    <Content Include="assets\sass\_general.scss" />
-    <Content Include="assets\sass\_header.scss" />
-    <Content Include="assets\sass\_hero.scss" />
-    <Content Include="assets\sass\_map-location.scss" />
-    <Content Include="assets\sass\_media.scss" />
-    <Content Include="assets\sass\_mixin.scss" />
-    <Content Include="assets\sass\_portfolio.scss" />
-    <Content Include="assets\sass\_preloader.scss" />
-    <Content Include="assets\sass\_resume.scss" />
-    <Content Include="assets\sass\_single-blog.scss" />
-    <Content Include="assets\sass\_single-portfolio.scss" />
-    <Content Include="assets\sass\_skill.scss" />
-    <Content Include="assets\sass\_testimonial.scss" />
-    <Content Include="assets\sass\_uone-dark.scss" />
-    <Content Include="assets\sass\_variables.scss" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
