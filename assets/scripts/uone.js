@@ -175,120 +175,36 @@ function testimonialsCarousel() {
 /*-------------------------
           RESUME/PROGRAMING
   -------------------------*/
-// Get the modal
-var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("dotNet");
-var xamarin = document.getElementById("xamarin");
-
-
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-// When the user clicks the button, open the modal 
-btn.onclick = function () {
-    modal.style.display = "block";  
-}
-xamarin.onclick = function () {
-    modal.style.display = "block";
-    var parent = document.getElementById("parent");
-    var child = document.getElementById("child");
-    var para = document.createElement("p");
-    var node = document.createTextNode("xamarin text here.");
-    para.appendChild(node);
-    parent.replaceChild(para, child);
-}
-sql.onclick = function () {
-    modal.style.display = "block";
-    var parent = document.getElementById("parent");
-    var child = document.getElementById("child");
-    var para = document.createElement("p");
-    var node = document.createTextNode("sql text here.");
-    para.appendChild(node);
-    parent.replaceChild(para, child);
-}
-
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 
 
 /*-------------------------
-     AJAX CONTACT FORM
+     AJAX CONTACT FORM 
 -------------------------*/
-function validateEmail(email) {
+const btn = document.getElementById('button');
 
-    "use strict";
+document.getElementById('form')
+    .addEventListener('submit', function (event) {
+        event.preventDefault();
 
-    var re = /\S+@\S+\.\S+/;
-    return re.test(email);
-}
-function sendEmail() {
+        btn.value = 'Sending...';
 
-    "use strict";
+        const serviceID = 'default_service';
+        const templateID = 'template_5odrujy';
 
-    var name     = $('#name').val();
-    var email    = $('#email').val();
-    var subject  = $('#subject').val();
-    var comments = $('#comments').val();
-
-    if(!name){
-        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
-        $('.toast-body').html('Name is  required');
-    } else if(!email){
-        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
-        $('.toast-body').html('Email is  required');
-    } else if(!validateEmail(email)){
-        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
-        $('.toast-body').html('Email is not valid');
-    } else if(!subject){
-        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
-        $('.toast-body').html('Subject is  required');
-    }else if(!comments){
-        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
-        $('.toast-body').html('Comments is  required');
-    }else {
-        $.ajax({
-            type: 'POST',
-            data: $("#contactForm").serialize(),
-            url:  "sendEmail.php",
-            beforeSend: function() {
-                $('#submit-btn').html('<span class="spinner-border spinner-border-sm"></span> Loading..');
-            },
-            success: function(data) {
-                $('#submit-btn').html('Submit');
-                var myObj = JSON.parse(data);
-                if(myObj['status']=='Congratulation'){
-                    $('#message').toast('show').addClass('bg-success').removeClass('bg-danger bg-warning');
-                    $('.toast-body').html('<strong>'+ myObj['status'] +' : </strong> '+ myObj['message']);
-                }else if(myObj['status']=='Error'){
-                    $('#message').toast('show').addClass('bg-danger').removeClass('bg-success bg-warning');
-                    $('.toast-body').html('<strong>'+ myObj['status'] +' : </strong> '+ myObj['message']);
-                }else if(myObj['status']=='Warning'){
-                    $('#message').toast('show').addClass('bg-warning').removeClass('bg-success bg-danger');
-                    $('.toast-body').html('<strong>'+ myObj['status'] +' : </strong> '+ myObj['message']);
-                }
-            },
-            error: function(xhr) {
-                $('#submit-btn').html('Submit');
-                $('#message').toast('show').addClass('bg-danger').removeClass('bg-success bg-warning');
-                $('.toast-body').html('<strong> Error : </strong> Something went wrong, Please try again.');
-            },
-        });
-    }
-}
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                btn.value = 'Send Email';
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Message Sent',
+                    text: 'I will respond back to you soon!',
+                })
+            }, (err) => {
+                btn.value = 'Send Email';
+                alert(JSON.stringify(err));
+            });
+    });
 
 /*-------------------------
      Back to Top Button

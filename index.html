@@ -9,7 +9,7 @@
     <meta name="author" content="Retrina Group" />
 
     <!--  FavIcon  -->
-    <link rel="shortcut icon" href="http://placehold.it/60x60">
+    <link rel="shortcut icon" href="assets/images/car.png">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">
@@ -30,22 +30,7 @@
     <!--  Custom Style CSS  -->
     <link rel="stylesheet" href="assets/content/style.css">
     <!--EMAILJS-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init('user_hOYljO9lSy6sfC88cPwcD');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function () {
-            document.getElementById('contactform').addEventListener('submit', function (event) {
-                event.preventDefault();
-                // generate the contact number value
-                this.contact_number.value = Math.random() * 100000 | 0;
-                emailjs.sendForm('contact_service', 'contact_form', this);
-            });
-        }
-    </script>
+
 
 </head>
 <body data-spy="scroll" data-target="#scrollspy" data-offset="61">
@@ -171,24 +156,19 @@
                         <div class="col"><div class="pb-4"></div></div>
                     </div>
                     <div class="row">
-                        <div class="col-4" id="html5"><img src="assets/images/html5.jpg" class="imageSize">  </div>
+                        <div class="col-4" id="html5"><img src="assets/images/html5.jpg" class="imageSize" data-toggle="modal" data-target="#myModal">  </div>
                         <div class="col-4" id="bootstrap"><img src="assets/images/bootstrap.png" class="imageSize">  </div>
                         <div class="col-4" id="git"><img src="assets/images/git.png" class="imageSize"> </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <h2 class="text-dark mb-4 text-center">Resume</h2>
-                    <img src="assets/images/resume.jpg" class="container-fluid imageFit resumeSize" />
+                    <a href="assets/images/Resume_MacColl Nicolson.pdf">
+                        <img src="assets/images/resume.jpg" class="container-fluid imageFit resumeSize" />
+                    </a>
                 </div>
-                <div id="myModal" class="modal">
 
-                    <!-- Modal content -->
-                    <div class="modal-content" id="parent">
-                        <span class="close">&times;</span>
-                        <p id="child">Some text in the Modal..</p>
-                    </div>
-
-</section>
+    </section>
     <!--   Resume End   -->
     <!--  Portfolio Start  -->
     <section id="portfolio" class="portfolio py-6">
@@ -538,7 +518,7 @@
                     <div class="col-lg-12 mt-5 contact-form">
                         <h4>Have any comments or questions?</h4>
                         <h5 class="text-muted">Let’s talk!</h5>
-                        <form id="contactForm">
+                        <form id="form">
                             <div class="row">
                                 <div class="col-lg-6 form-item">
                                     <div class="form-group">
@@ -547,7 +527,7 @@
                                 </div>
                                 <div class="col-lg-6 form-item">
                                     <div class="form-group">
-                                        <input name="email" id="email" type="email" class="form-control" placeholder="Your Email*" required>
+                                        <input name="reply_to" id="reply_to" type="email" class="form-control" placeholder="Your Email*" required>
                                     </div>
                                 </div>
                                 <div class="col-12 form-item">
@@ -557,11 +537,11 @@
                                 </div>
                                 <div class="col-12 form-item">
                                     <div class="form-group">
-                                        <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Your message..."></textarea>
+                                        <textarea name="message" id="message" rows="4" class="form-control" placeholder="Your message..."></textarea>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 mt-4 text-left">
-                                    <button type="button" class="pill-button purple-button rounded" id="submit-btn" onclick="sendEmail()">Send Message</button>
+                                    <button type="submit" class="pill-button purple-button rounded" id="button" value="Send Email"> Send Message</button>
                                     <div id="message" class="toast text-white shadow-none border-0" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000">
                                         <div class="toast-body d-inline-block"></div>
                                         <button type="button" class="pr-3 close" data-dismiss="toast" aria-label="Close">
@@ -571,6 +551,12 @@
                                 </div>
                             </div>
                         </form>
+                        <script type="text/javascript"
+                                src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+                        <script type="text/javascript">
+                            emailjs.init('user_hOYljO9lSy6sfC88cPwcD')
+                        </script>
                     </div>
                 </div>
             </div>
@@ -586,8 +572,58 @@
             </div>
         </div>
         </div>
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        Modal body..
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </footer>
     <!--   Footer End  -->
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Modal body..
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <!--  JavaScripts  -->
     <script src="assets/scripts/jquery-3.4.1.min.js"></script>
     <!--  Bootstrap Js  -->
@@ -607,5 +643,12 @@
     <!--  Custom JS  -->
     <script src="assets/scripts/uone.js"></script>
     <script>slyslider();</script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('user_hOYljO9lSy6sfC88cPwcD')
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 </html>
