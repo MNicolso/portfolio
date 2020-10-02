@@ -55,10 +55,13 @@ p {
   line-height: 1.618; }
 
 .base-color {
-  color: #052025 !important; }
+  color: #052424 !important; }
+.base-color-light {
+    color: #123b3b !important;
+}
 
 .bg-base-color {
-  background-color: #052025 !important; }
+  background-color: #052424 !important; }
 
 .z-index {
   z-index: 2; }
@@ -93,8 +96,8 @@ a, button {
   outline: none !important; }
 
 .pill-button {
-  background-color: #052025;
-  border: 2px solid #052025;
+  background-color: #052424;
+  border: 2px solid #052424;
   border-radius: 0.25rem;
   padding: 10px 30px;
   color: #ffffff;
@@ -118,10 +121,25 @@ a, button {
   border-color: #ffffff; }
 
 .social-icon .list-inline-item i:hover {
-  color: #052025 !important; }
+  color: #052424 !important; }
 
 .text-gray {
   color: #b7b7b7; }
+.thumbNailCustom {
+    padding: 0.33rem;
+    background-color: #fff;
+    border: 4px solid #ffffff;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
 
 /*-------------------------
         PRELOADER
@@ -142,7 +160,7 @@ a, button {
   z-index: 99999;
   border: 4px solid #ebebeb;
   border-radius: 50%;
-  border-top: 4px solid #052025;
+  border-top: 4px solid #052424;
   width: 40px;
   height: 40px;
   -webkit-animation: spin 2s linear infinite;
@@ -175,22 +193,24 @@ a, button {
     transition: all 0.5s;
     font-weight: 400; }
     .header nav a:hover {
-      color: #052025 !important; }
+      color: #052424 !important; }
   .header nav a.navbar-brand {
     color: #ffffff;
     font-size: 24px; }
   .header nav .nav-pills a.active {
-    color: #052025 !important; }
+    color: #052424 !important; }
 
 .header-sticky {
   background-color: #ffffff;
   padding: 5px 0;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 1);
   border-bottom: none !important; }
-  .header-sticky nav li a {
-    color: #222; }
-  .header-sticky nav a.navbar-brand {
-    color: #222; }
+    .header-sticky nav li a {
+        color: #411;
+    }
+    .header-sticky nav a.navbar-brand {
+        color: #123b3b;
+    }
 
 /*-------------------------
           HERO
@@ -211,7 +231,7 @@ a, button {
     font-size: 1.2rem;
     color: #ffffff; }
     .hero .list-inline-item i:hover {
-      color: #052025; }
+      color: #052424; }
   .hero .list-inline-item:not(:last-child) {
     margin-right: 1rem; }
   .hero .personal-item {
@@ -257,7 +277,7 @@ a, button {
   width: 0;
   border-radius: 3px;
   float: left;
-  background: #052025; }
+  background: #052424; }
 
 .skill-box .skill-bar-percent {
   position: absolute;
@@ -288,7 +308,7 @@ ul.timeline {
     background-color: #f5f5f5;
     display: inline-block;
     border-radius: 50%;
-    border: 3px solid #052025;
+    border: 3px solid #052424;
     left: -40px;
     width: 20px;
     height: 20px;
@@ -391,7 +411,7 @@ ul.timeline {
     border-radius: 50%;
     position: relative;
     top: -12px;
-    background: #052025; }
+    background: #052424; }
     .portfolio .portfolio-sly-slider .scrollbar .handle .mousearea {
       position: absolute;
       top: 8px;
@@ -448,7 +468,7 @@ ul.timeline {
   border-radius: 4px;
   transition: all 0.3s ease; }
   .portfolio .portfolio-icon a:hover {
-    background-color: #052025; }
+    background-color: #052424; }
   .portfolio .portfolio-icon a i {
     font-size: 18px;
     font-weight: 700; }
@@ -497,7 +517,7 @@ ul.timeline {
     transition: all 0.5s ease; }
   .testimonial .owl-dot.active span {
     width: 30px;
-    background-color: #052025; }
+    background-color: #052424; }
   .testimonial .owl-carousel .testimonial-item img {
     width: 115px;
     margin-top: 30px; }
@@ -563,7 +583,7 @@ ul.timeline {
   border-radius: 0;
   box-shadow: none;
   height: 44px;
-  color: #052025;
+  color: #052424;
   font-size: 14px;
   position: relative;
   padding: 12px 0;
@@ -588,7 +608,7 @@ ul.timeline {
   top: 8px; }
 
 .contact .form-item .form-control:focus {
-  border-bottom: 1px solid #052025; }
+  border-bottom: 1px solid #052424; }
 
 /*-------------------------
         Map Location
@@ -603,7 +623,7 @@ ul.timeline {
 footer ul li a {
   color: #ffffff; }
   footer ul li a:hover {
-    color: #052025; }
+    color: #052424; }
 
 footer ul li.list-inline-item:not(:last-child) {
   margin-right: 1.5rem; }
@@ -613,7 +633,7 @@ footer .socials li {
   display: inline-block; }
 
 footer .back-to-top:hover {
-  color: #052025 !important; }
+  color: #bf2739 !important; }
 
 /*-------------------------
        COLOR SCHEME
@@ -659,7 +679,7 @@ footer .back-to-top:hover {
   .page-hero .hero-content {
     transform: translateY(-50%); }
     .page-hero .hero-content a:hover {
-      color: #052025 !important; }
+      color: #052424 !important; }
 
 .pt-hero {
   padding-top: 66px; }
@@ -674,7 +694,7 @@ footer .back-to-top:hover {
 .comments .comment-info a {
   color: #0b0b0b; }
   .comments .comment-info a:hover {
-    color: #052025 !important; }
+    color: #052424 !important; }
 
 /*-------------------------
      Single Portfolio
@@ -691,7 +711,7 @@ footer .back-to-top:hover {
   bottom: -25px;
   left: calc(50% - 48px); }
   .single-portfolio .owl-nav .owl-prev span, .single-portfolio .owl-nav .owl-next span {
-    background: #052025;
+    background: #052424;
     color: #ffffff;
     width: 38px;
     height: 38px;
@@ -717,7 +737,7 @@ footer .back-to-top:hover {
   bottom: -30px;
   left: calc(50% - 48px); }
   .related-portfolio .owl-nav .owl-prev span, .related-portfolio .owl-nav .owl-next span {
-    background: #052025;
+    background: #052424;
     color: #ffffff;
     width: 38px;
     height: 38px;
@@ -764,7 +784,7 @@ body.uone-dark {
 .uone-dark .comment-info a {
   color: #ffffff !important; }
   .uone-dark .comment-info a:hover {
-    color: #052025 !important; }
+    color: #052424 !important; }
 
 .uone-dark .form-item .form-control {
   color: #ffffff !important; }
@@ -782,7 +802,7 @@ body.uone-dark {
   color: #6c757d;
   background-color: #ffffff; }
   .uone-dark .portfolio .portfolio-icon a:hover {
-    background-color: #052025;
+    background-color: #052424;
     color: #ffffff; }
 
 .uone-dark .bg-dark, .uone-dark .bg-white {
@@ -814,13 +834,13 @@ body.uone-dark {
   border-bottom: 1px solid #ffffff;
   background: #0b0b0b; }
   .uone-dark .form-item .form-control:focus {
-    border-bottom: 1px solid #052025; }
+    border-bottom: 1px solid #052424; }
 
 .uone-dark .navbar-nav .nav-item a:hover, .uone-dark .navbar a:hover {
-  color: #052025 !important; }
+  color: #052424 !important; }
 
 .uone-dark .navbar a:hover {
-  color: #052025 !important; }
+  color: #052424 !important; }
 
 @media (max-width: 991px) {
   .uone-dark .header {
@@ -854,7 +874,7 @@ body.uone-dark {
   .comment-info a {
     color: #ffffff !important; }
     .comment-info a:hover {
-      color: #052025 !important; }
+      color: #052424 !important; }
   .form-item .form-control {
     color: #ffffff !important; }
   .text-muted {
@@ -867,7 +887,7 @@ body.uone-dark {
     color: #6c757d;
     background-color: #ffffff; }
     .portfolio .portfolio-icon a:hover {
-      background-color: #052025;
+      background-color: #052424;
       color: #ffffff; }
   .bg-dark, .bg-white {
     background-color: rgba(27, 30, 33, 0.9) !important; }
@@ -890,11 +910,11 @@ body.uone-dark {
     border-bottom: 1px solid #ffffff;
     background: #0b0b0b; }
     .form-item .form-control:focus {
-      border-bottom: 1px solid #052025; }
+      border-bottom: 1px solid #052424; }
   .navbar-nav .nav-item a:hover, .navbar a:hover {
-    color: #052025 !important; }
+    color: #052424 !important; }
   .navbar a:hover {
-    color: #052025 !important; } }
+    color: #052424 !important; } }
 
 @media (prefers-color-scheme: dark) and (max-width: 991px) {
   .header {
@@ -921,7 +941,7 @@ body.uone-dark {
   .full-screen {
     height: auto; }
   .personal-img img {
-    display: none; }
+    display:none; }
   .hero .personal-item {
     top: 0; }
   .header {
