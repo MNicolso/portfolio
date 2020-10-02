@@ -148,6 +148,11 @@ a.anchor {
     visibility: hidden;
 }
 
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
 /*-------------------------
         PRELOADER
 -------------------------*/

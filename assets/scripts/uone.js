@@ -150,7 +150,7 @@ function slyslider() {
 }
 
 /*-------------------------
-     AJAX CONTACT FORM 
+     EMAILJS CONTACT FORM 
 -------------------------*/
 const btn = document.getElementById('button');
 
