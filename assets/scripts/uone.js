@@ -15,11 +15,8 @@ $(document).ready(function () {
 
     "use strict";
 
-    singlePortfolioCarousel();
     smoothScroll();
     portfolioPopup();
-    testimonialsCarousel();
-    mapInit();
     backToTop();
     wow();
 
@@ -153,32 +150,6 @@ function slyslider() {
 }
 
 /*-------------------------
-     OWL CAROUSEL JS
--------------------------*/
-function testimonialsCarousel() {
-
-    "use strict";
-
-    $(".testimonial .owl-carousel").owlCarousel({
-        items: 1,
-        nav: false,
-        autoplay: true,
-        loop: true,
-        dots: true,
-        mouseDrag: true,
-        touchDrag: true,
-        smartSpeed: 1000,
-        autoplayHoverPause: true,
-    });
-}
-
-/*-------------------------
-          RESUME/PROGRAMING
-  -------------------------*/
-
-
-
-/*-------------------------
      AJAX CONTACT FORM 
 -------------------------*/
 const btn = document.getElementById('button');
@@ -224,47 +195,6 @@ function wow() {
     new WOW().init();
 }
 
-/*-------------------------------------
-   SINGLE PORTFOLIO OWL CAROUSEL JS
--------------------------------------*/
-function singlePortfolioCarousel() {
-
-    "use strict";
-
-    $("#related-portfolio .related-portfolio.owl-carousel").owlCarousel({
-        nav: true,
-        margin: 15,
-        autoplay: true,
-        loop: true,
-        mouseDrag: true,
-        touchDrag: true,
-        smartSpeed: 1000,
-        autoplayHoverPause: true,
-        responsive : {
-            0 : {
-                items: 1
-            },
-            768 : {
-                items: 2
-            },
-            991 : {
-                items: 3
-            }
-        }
-    });
-
-    $("#single-portfolio .owl-carousel").owlCarousel({
-        items: 1,
-        nav: true,
-        autoplay: true,
-        loop: true,
-        mouseDrag: true,
-        touchDrag: true,
-        smartSpeed: 1000,
-        autoplayHoverPause: true,
-    });
-
-}
 
 
 

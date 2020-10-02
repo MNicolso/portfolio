@@ -97,7 +97,6 @@
     <Content Include="assets\content\font-awesome.min.css" />
     <Content Include="assets\content\LineIcons.css" />
     <Content Include="assets\content\magnific-popup.css" />
-    <Content Include="assets\content\owl.carousel.min.css" />
     <Content Include="assets\content\style.css" />
     <Content Include="assets\fonts\fontawesome-webfont.svg" />
     <Content Include="assets\fonts\ionicons.svg" />
@@ -107,7 +106,6 @@
     <Content Include="assets\scripts\jquery-3.4.1.min.js" />
     <Content Include="assets\scripts\jquery.easing.min.js" />
     <Content Include="assets\scripts\jquery.magnific-popup.min.js" />
-    <Content Include="assets\scripts\owl.carousel.min.js" />
     <Content Include="assets\scripts\slyslider.js" />
     <Content Include="assets\scripts\uone.js" />
     <Content Include="assets\scripts\wow.min.js" />
