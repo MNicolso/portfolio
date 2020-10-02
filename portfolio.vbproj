@@ -114,6 +114,7 @@
     <Content Include="index.html" />
     <Content Include="sendEmail.php" />
     <Content Include="Web.config" />
+    <Content Include="wheel reformat.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="My Project\AssemblyInfo.vb" />

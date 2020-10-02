@@ -131,10 +131,10 @@ function slyslider() {
             mouseDragging: 1,
             touchDragging: 1,
             releaseSwing: 1,
-            startAt: 0,
+            startAt: 5,
             scrollBar: $wrap.find('.scrollbar'),
             scrollBy: 1,
-            speed: 300,
+            speed: 0,
             elasticBounds: 1,
             easing: 'easeOutExpo',
             dragHandle: 1,
@@ -143,7 +143,7 @@ function slyslider() {
 
             // Cycling
             cycleBy: 'items',
-            cycleInterval: 5000,
+            cycleInterval: 0,
             pauseOnHover: 1
         });
         $(window).resize(function() {
