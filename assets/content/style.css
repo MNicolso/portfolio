@@ -223,6 +223,9 @@ a.anchor {
     .header-sticky nav a.navbar-brand {
         color: #123b3b;
     }
+    .fa-fa-Github {
+        background-ima
+    }
 
 /*-------------------------
           HERO
@@ -336,13 +339,13 @@ ul.timeline {
     }
 .imageSize:hover {
     transform: translate3D(0,1px,0) scale(1.15); /* move up slightly and zoom in */
-    box-shadow: 8px 28px 50px rgba(46, 49, 49, 1), 1px 6px 12px rgba(46, 49, 49, 1);
+    box-shadow: 8px 28px 50px rgba(46, 49, 49, .5), 1px 6px 12px rgba(46, 49, 49, .5);
     transition: all .4s ease; /* zoom in */
     cursor: pointer;
 }
 .resumeSize:hover {
     transform: translate3D(0,1px,0) scale(1.10); /* move up slightly and zoom in */
-    box-shadow: 8px 28px 50px rgba(46, 49, 49, 1), 1px 6px 12px rgba(46, 49, 49, 1);
+
     transition: all .4s ease; /* zoom in */
     cursor: pointer;
 }
@@ -563,6 +566,10 @@ ul.timeline {
 
         #slidingSec article:hover {
             width: 37%;
+            background-color: #38AECC;
+            border: 2px solid black;
+            border-radius: 25px;
+            box-shadow: 8px 28px 50px rgba(46, 49, 49, .5), 1px 6px 12px rgba(46, 49, 49, .5);
             -moz-transition: all 250ms ease-in-out;
             -o-transition: all 250ms ease-in-out;
             transition: all 250ms ease-in-out;
