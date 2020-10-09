@@ -101,6 +101,7 @@
     <Content Include="assets\fonts\fontawesome-webfont.svg" />
     <Content Include="assets\fonts\ionicons.svg" />
     <Content Include="assets\fonts\LineIcons.svg" />
+    <Content Include="assets\images\Favicon.png" />
     <Content Include="assets\scripts\bootstrap.js" />
     <Content Include="assets\scripts\isotope.pkgd.min.js" />
     <Content Include="assets\scripts\jquery-3.4.1.min.js" />
@@ -173,9 +174,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="assets\images\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
