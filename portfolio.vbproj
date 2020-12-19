@@ -160,6 +160,7 @@
     <Content Include="assets\fonts\LineIcons.eot" />
     <Content Include="assets\fonts\LineIcons.ttf" />
     <Content Include="assets\fonts\LineIcons.woff" />
+    <Content Include="assets\images\MacColl Nicolson.pdf" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
