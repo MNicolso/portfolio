@@ -1166,9 +1166,9 @@ body.uone-dark {
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,,800,900);
 
-.title {
+/*.title {*/
 /*    font-weight: 800;*/
-    color: transparent;
+    /*color: transparent;
     font-size: 100px;
     background: url("../images/text background.jpg") repeat;
     background-position: 40% 50%;
@@ -1207,9 +1207,9 @@ body.uone-dark {
 }
 
 
-.hover_effect {
+.hover_effect {*/
 /*    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
-    display: block;
+    /*display: block;
     width: 100%;
     padding: 0px;
     position: relative;
@@ -1389,13 +1389,13 @@ span {
 
 .menu:hover .item:nth-child(10) {
     transition-delay: 0.7s;
-}
+}*/
 
 
 
 
 /* SHINY BUTTON */
-.two-part-button {
+/*.two-part-button {
   box-shadow:0;
   display:inline-block;
   border: none;
@@ -1447,4 +1447,4 @@ span {
   background-color:#165e5e  !important;
   cursor: pointer;
   box-shadow: 5px 5px rgba(46, 49, 49, .5);
-}
+}*/
