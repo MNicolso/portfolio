@@ -915,7 +915,7 @@ footer .back-to-top:hover {
 /*-------------------------
        UONE DARK
 -------------------------*/
-body.uone-dark {
+/*body.uone-dark {
   background-color: #0b0b0b;
   color: #ffffff; }
 
@@ -997,7 +997,7 @@ body.uone-dark {
   color: #052424 !important; }
 
 .uone-dark .navbar a:hover {
-  color: #052424 !important; }
+  color: #052424 !important; }*/
 
 /*@media (max-width: 991px) {
   .uone-dark .header {
@@ -1010,7 +1010,7 @@ body.uone-dark {
 /*--------------------------------------
        prefers-color-scheme: dark
 --------------------------------------*/
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
   body {
     background-color: #0b0b0b;
     color: #ffffff; }
@@ -1063,7 +1063,7 @@ body.uone-dark {
     }
   .blog-content h5 a:hover {
     color: #e6e6e6 !important; }
- /* .form-item .form-control {
+  .form-item .form-control {
     border-bottom: 1px solid #ffffff;
     background: #0b0b0b; }
     .form-item .form-control:focus {
@@ -1071,7 +1071,7 @@ body.uone-dark {
   .navbar-nav .nav-item a:hover, .navbar a:hover {
     color: #052424 !important; }
   .navbar a:hover {
-    color: #052424 !important; } }*/
+    color: #052424 !important; } }
 
 @media (prefers-color-scheme: dark) and (max-width: 991px) {
   .header {
@@ -1079,7 +1079,7 @@ body.uone-dark {
     .header nav li a {
       color: #ffffff; }
     .header button span {
-      color: #ffffff; } }
+      color: #ffffff; } }*/
 
 /*-------------------------
        MEDIA SCREENS
