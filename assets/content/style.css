@@ -1208,7 +1208,7 @@ body.uone-dark {
 
 
 .hover_effect {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+/*    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
     display: block;
     width: 100%;
     padding: 0px;
